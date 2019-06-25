@@ -2,14 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"math/rand"
 )
 
-func foo() {
-	fmt.Println("The square root of 4 is", math.Sqrt(4))
-}
+//  "/" slash give us access to package
 
 func main() {
-	// manin function allways run, non-stop
-	foo()
+	fmt.Println("A number from 1-100", rand.Intn(100))
 }
